@@ -1,7 +1,5 @@
 # PhotoAlbum-Backend
 
-can be tested [here]()
-
 Using rest api and node js to create photo album backend
 
 API Routes: <br/>
