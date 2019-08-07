@@ -1,4 +1,4 @@
-# PhotoAlbum-Bacckend
+# PhotoAlbum-Backend
 
 can be tested [here]()
 
