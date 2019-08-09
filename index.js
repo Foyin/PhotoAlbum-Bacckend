@@ -117,6 +117,14 @@ app.get('/api/search/albums', (req, res) => {
 	res.status(200);
 });
 
+app.get('/api/search/photos', (req, res) => {
+	res.header("Content-Type",'application/json');
+	var urlObj = parseURL(req, res);
+	var result = photos.find(function(x){ return x.id === parseInt(urlObj.query.id)});
+	res.json(result);
+	res.status(200);
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
